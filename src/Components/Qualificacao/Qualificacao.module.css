@@ -1,0 +1,118 @@
+.qualificacao {
+    margin-top: 5.8rem;
+}
+
+.qualificacao__container {
+    max-width: 768px;
+}
+
+.qualificacao__tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--mb-3);
+}
+
+.qualificacao__button {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+    cursor: pointer;
+    margin: 0 var(--mb-1);
+}
+
+.qualificacao__button:hover {
+    color: var(--title-color-dark);
+}
+
+.qualificacao__icon {
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-5);
+}
+
+.qualificacao__ativo {
+    color: var(--title-color-dark);
+}
+
+.qualificacao__sections {
+    display: grid;
+    grid-template-columns: .5fr;
+    justify-content: center;
+}
+
+.qualificacao__content {
+    display: none;
+}
+
+.qualificacao__contentAtivo {
+    display: block;
+}
+
+.qualificacao__data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.qualificacao__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.qualificacao__subtitle {
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.qualificacao__calendario {
+    font-size: var(--small-font-size);
+    margin-bottom: 2.5rem;
+}
+
+.qualificacao__circulo {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+}
+
+.qualificacao__linha {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--text-color);
+    transform: translate(6px, -7px);
+}
+
+/*========== BREAKPOINTS ==========*/
+/*===== LARGE DEVICES =====*/
+@media screen and (max-width: 992px) {
+    .qualificacao__container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*===== MEDIUM DEVICES =====*/
+@media screen and (max-width: 768px) {
+    .qualificacao__container {
+        margin-left: var(--mb-1-5);
+        margin-right: var(--mb-1-5);
+    }
+}
+
+/*===== SMALL DEVICES =====*/
+@media screen and (max-width: 600px) {
+    .qualificacao__sections {
+        grid-template-columns: inherit;
+    }
+
+    .qualificacao__button {
+        margin: 0 var(--mb-0-75);
+    }
+
+    .qualificacao__data {
+        gap: .5rem;
+    }
+}

@@ -1,0 +1,151 @@
+.servicos__container {
+    grid-template-columns: repeat(3, 270px);
+    justify-content: center;
+    column-gap: 1.8rem;
+}
+
+.servicos__content {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--container-color);
+    padding: 6rem 0 2rem 2.5rem;
+    border-radius: 1rem;
+}
+
+.servicos__icone {
+    display: block;
+    font-size: 2rem;
+    color: var(--title-color);
+    margin-bottom: var(--mb-1);
+}
+
+.servicos__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+    font-weight: var(--font-medium);
+}
+
+.servicos__button {
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    cursor: pointer;
+}
+
+.servicos__button:hover .servicos__buttonIcon {
+    transform: translateX(4px);
+    transition: .3s
+}
+
+.servicos__buttonIcon {
+    font-size: 1rem;
+}
+
+.servicos__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: var(--z-modal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.servicos__modalContent {
+    width: 500px;
+    position: relative;
+    background-color: var(--container-color);
+    padding: 4.5rem 2.5rem 2.5rem;
+    border-radius: 1.5rem;
+}
+
+.servicos__modalFechar {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+.servicos__modalTitle,
+.servicos__modalDescricao {
+    text-align: center;
+}
+
+.servicos__modalTitle {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
+
+.servicos__modalDescricao {
+    font-size: var(--small-font-size);
+    padding: 0 3.5rem;
+    margin-bottom: var(--mb-2);
+}
+
+.servicos__modalServicos {
+    row-gap: .75rem;
+}
+
+.servicos__modalServico {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.servicos__modalIcon {
+    color: var(--title-color);
+    font-size: 1.1rem;
+}
+
+.servicos__modalInfo {
+    font-size: var(--small-font-size);
+}
+
+/* ===== ATIVAR MODAL ===== */
+.modalAtiva {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*========== BREAKPOINTS ==========*/
+/*===== LARGE DEVICES =====*/
+@media screen and (max-width: 992px) {
+    .servicos__container {
+        grid-template-columns: repeat(3, 218px);
+    }
+
+    .servicos__content {
+        padding: 3.5rem 1.5rem 1.25rem 1.5rem;
+    }
+
+    .servicos__icone {
+        font-size: 1.8rem;
+    }
+}
+
+/*===== SMALL DEVICES =====*/
+@media screen and (max-width: 600px) {
+    .servicos__container {
+        grid-template-columns: .9fr;
+    }
+
+    .servicos__modalContent {
+        padding: 4.5rem 1.5rem 2.5rem;
+    }
+
+    .servicos__modalDescricao {
+        padding: 0;
+    }
+}

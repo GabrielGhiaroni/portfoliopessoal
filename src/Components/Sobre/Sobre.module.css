@@ -1,0 +1,95 @@
+.sobre {
+    text-align: center;
+}
+
+.sobre__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+    margin-top: var(--mb-2-5);
+}
+
+.sobre__img {
+    width: 350px;
+    border-radius: 1.5rem;
+}
+
+.sobre__info {
+    grid-template-columns: repeat(3, 140px);
+    gap: .5rem;
+    margin-bottom: var(--mb-2);
+}
+
+.sobre__box {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .75rem;
+    text-align: center;
+    padding: 1rem 1.25rem;
+}
+
+.sobre__icon {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    margin-bottom: var(--mb-0-5);
+}
+
+.sobre__titulo {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+
+.sobre__subtitulo {
+    font-size: var(--smaller-font-size);
+}
+
+.sobre__description {
+    padding: 0 4rem 0 0;
+    margin-bottom: var(--mb-2-5);
+}
+
+/*========== BREAKPOINTS ==========*/
+/*===== LARGE DEVICES =====*/
+@media screen and (max-width: 992px) {
+    .sobre__container {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+
+    .sobre__img {
+        width: 220px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .sobre__box {
+        padding: .75rem .5rem;
+    }
+
+    .sobre__data {
+        text-align: center;
+    }
+
+    .sobre__info {
+        justify-content: center;
+    }
+
+    .sobre__description {
+        padding: 0 5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/*===== MEDIUM DEVICES =====*/
+@media screen and (max-width: 768px) {}
+
+/*===== SMALL DEVICES =====*/
+@media screen and (max-width: 600px) {
+    .sobre__info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sobre__description {
+        padding: 0;
+    }
+}
