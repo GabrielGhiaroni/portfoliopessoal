@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header id='header' className={styles.header}>
         <nav className={[styles.nav, "container"].join(' ')}>
-            <a href="#" className={styles.nav__logo}>
+            <a href="#home" className={styles.nav__logo}>
                 Ghiaroni
             </a>
 

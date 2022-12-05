@@ -5,7 +5,7 @@ import { AiOutlineArrowDown } from 'react-icons/ai';
 const ScrollDown = () => {
   return (
     <div className={styles.home__scroll}>
-        <a href="" className={[styles.home__scrollButton, "button--flex"].join(' ')}>
+        <a href="#sobre" className={[styles.home__scrollButton, "button--flex"].join(' ')}>
         <svg
                 width="32px"
                 height="32px"
